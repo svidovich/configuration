@@ -1,0 +1,13 @@
+# This file describes the network interfaces available on your system
+# For more information, see netplan(5).
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    ens33:
+      addresses:
+        - 192.168.your.ip/24
+      gateway4: 192.168.your.gateway
+      nameservers:
+        search: [mydomain, otherdomain]
+        addresses: [192.168.your.gateway, 1.1.1.1]
