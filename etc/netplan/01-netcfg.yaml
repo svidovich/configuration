@@ -4,7 +4,7 @@ network:
   version: 2
   renderer: networkd
   ethernets:
-    ens33:
+    your-interface:
       addresses:
         - 192.168.your.ip/24
       gateway4: 192.168.your.gateway
